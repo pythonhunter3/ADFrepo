@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"folderPath": "project/output",
+				"folderPath": "project/archive",
 				"fileSystem": "proj-container"
 			},
 			"columnDelimiter": "\t",
