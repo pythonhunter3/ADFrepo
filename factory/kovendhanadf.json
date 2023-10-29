@@ -1,0 +1,9 @@
+{
+	"name": "kovendhanadf",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "95689166-6f2e-413d-af1a-9f74ec206665",
+		"tenantId": "8abe51a6-5bd4-45a4-8b4f-f21e4dfa9dfa"
+	}
+}
