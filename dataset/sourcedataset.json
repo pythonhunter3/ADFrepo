@@ -11,7 +11,7 @@
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"fileName": "SalesLTProduct.txt",
-				"folderPath": "project/input",
+				"folderPath": "project/output",
 				"fileSystem": "proj-container"
 			},
 			"columnDelimiter": "\t",
