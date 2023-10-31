@@ -61,6 +61,11 @@
 				],
 				"userProperties": [],
 				"typeProperties": {
+					"items": {
+						"value": "@activity('Get Metadata1').output",
+						"type": "Expression"
+					},
+					"isSequential": true,
 					"activities": [
 						{
 							"name": "If Condition1",
