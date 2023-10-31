@@ -132,7 +132,7 @@
 														"type": "Expression"
 													},
 													"ds_file_name": {
-														"value": "@pipeline().parameters.pp_file_name",
+														"value": "@item().name",
 														"type": "Expression"
 													}
 												}
@@ -147,12 +147,9 @@
 														"value": "@pipeline().parameters.pp_file_system",
 														"type": "Expression"
 													},
-													"ds_directory": {
-														"value": "@pipeline().parameters.pp_directory_in",
-														"type": "Expression"
-													},
+													"ds_directory": "project/output/txt",
 													"ds_file_name": {
-														"value": "@pipeline().parameters.pp_file_name",
+														"value": "@item().name",
 														"type": "Expression"
 													}
 												}
