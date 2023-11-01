@@ -75,7 +75,7 @@
 							"userProperties": [],
 							"typeProperties": {
 								"expression": {
-									"value": "@split(item().name,'.')[1]",
+									"value": "@endswith(item().name,'txt')",
 									"type": "Expression"
 								},
 								"ifFalseActivities": [
