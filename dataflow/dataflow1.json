@@ -56,7 +56,7 @@
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false,",
 				"     partitionBy('roundRobin', 2)) ~> source1",
-				"select1 filter(ProductID>700) ~> filter1",
+				"select1 filter(ProductID<700) ~> filter1",
 				"derivedColumn1 select(mapColumn(",
 				"          ProductID,",
 				"          Name,",
@@ -85,7 +85,8 @@
 				"     preCommands: [],",
 				"     postCommands: [],",
 				"     skipDuplicateMapInputs: true,",
-				"     skipDuplicateMapOutputs: true) ~> sink1"
+				"     skipDuplicateMapOutputs: true,",
+				"     saveOrder: 1) ~> sink1"
 			]
 		}
 	}
