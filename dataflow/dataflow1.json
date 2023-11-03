@@ -27,6 +27,9 @@
 				},
 				{
 					"name": "select1"
+				},
+				{
+					"name": "derivedColumn1"
 				}
 			],
 			"scriptLines": [
@@ -53,8 +56,8 @@
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false,",
 				"     partitionBy('roundRobin', 2)) ~> source1",
-				"select1 filter(Color=='Blue') ~> filter1",
-				"source1 select(mapColumn(",
+				"select1 filter(ProductID>700) ~> filter1",
+				"derivedColumn1 select(mapColumn(",
 				"          ProductID,",
 				"          Name,",
 				"          ProductNumber,",
@@ -75,6 +78,7 @@
 				"     ),",
 				"     skipDuplicateMapInputs: true,",
 				"     skipDuplicateMapOutputs: true) ~> select1",
+				"source1 derive(ProductID = 123) ~> derivedColumn1",
 				"filter1 sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     umask: 0022,",

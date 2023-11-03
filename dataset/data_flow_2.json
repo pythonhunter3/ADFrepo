@@ -13,7 +13,7 @@
 				"folderPath": "project/output/dataflow",
 				"fileSystem": "proj-container"
 			},
-			"columnDelimiter": ",",
+			"columnDelimiter": "\t",
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
