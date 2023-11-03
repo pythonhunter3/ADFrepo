@@ -15,7 +15,7 @@
 			"sinks": [
 				{
 					"dataset": {
-						"referenceName": "data_flow_set",
+						"referenceName": "data_flow_2",
 						"type": "DatasetReference"
 					},
 					"name": "sink1"
@@ -77,25 +77,6 @@
 				"     skipDuplicateMapOutputs: true) ~> select1",
 				"filter1 sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
-				"     input(",
-				"          ProductID as string,",
-				"          Name as string,",
-				"          ProductNumber as string,",
-				"          Color as string,",
-				"          StandardCost as string,",
-				"          ListPrice as string,",
-				"          Size as string,",
-				"          Weight as string,",
-				"          ProductCategoryID as string,",
-				"          ProductModelID as string,",
-				"          SellStartDate as string,",
-				"          SellEndDate as string,",
-				"          DiscontinuedDate as string,",
-				"          ThumbNailPhoto as string,",
-				"          ThumbnailPhotoFileName as string,",
-				"          rowguid as string,",
-				"          ModifiedDate as string",
-				"     ),",
 				"     umask: 0022,",
 				"     preCommands: [],",
 				"     postCommands: [],",
