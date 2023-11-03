@@ -1,5 +1,5 @@
 {
-	"name": "sqlcopy",
+	"name": "sqlcopy_table_to_file",
 	"properties": {
 		"activities": [
 			{
