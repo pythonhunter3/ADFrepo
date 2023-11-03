@@ -47,7 +47,7 @@
 						"parameters": {
 							"ds_filesystem": "proj-container",
 							"ds_directory": "project/output",
-							"ds_file_name": "sqlsalest.txt"
+							"ds_file_name": "Book 1.csv"
 						}
 					}
 				],
