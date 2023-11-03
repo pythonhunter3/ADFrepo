@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "saleslfdf",
+				"fileName": "saleslfdf.txt",
 				"folderPath": "project/output/dataflow",
 				"fileSystem": "proj-container"
 			},
