@@ -28,6 +28,8 @@
 					},
 					"sink": {
 						"type": "AzureSqlSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false,
 						"disableMetricsCollection": false
 					},
 					"enableStaging": false,
@@ -42,13 +44,8 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "para_data_set",
-						"type": "DatasetReference",
-						"parameters": {
-							"ds_filesystem": "proj-container",
-							"ds_directory": "project/output",
-							"ds_file_name": "Book 1.csv"
-						}
+						"referenceName": "filetotable",
+						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
